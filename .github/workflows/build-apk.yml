@@ -26,6 +26,8 @@ jobs:
           java-version: 17
 
       - uses: android-actions/setup-android@v3
+        with:
+          packages: ''
 
       - name: Pasang platform dan build-tools
         run: sdkmanager --install "platforms;android-34" "build-tools;34.0.0"
